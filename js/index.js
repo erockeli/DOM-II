@@ -15,7 +15,7 @@ const anchors = document.querySelectorAll('a');
  
 anchors.forEach(function(item,index,array){
     item.addEventListener("click", (event)=>{
-        // console.log('clicked', index);
+        
         event.preventDefault();
     });
 });
@@ -63,7 +63,7 @@ introText.addEventListener("dblclick", (event)=>{
 const contentImg = document.querySelectorAll('.content-section img');
  
 logo.addEventListener('transitionstart', (event)=>{
-    // contentImg[0].style.transform = "transateX(2000px)";
+    
     contentImg[0].style.transition = "4s";
     contentImg[0].style.width = "40%";
 });
@@ -71,7 +71,7 @@ logo.addEventListener('transitionstart', (event)=>{
 logo.addEventListener('transitionend', (event)=>{
     contentImg[0].style.transition = "2s";
     contentImg[0].style.width = "100%";
-    // console.log("transitionend");
+    
 });
 
 let lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima aliquid, voluptatem deleniti nesciunt repellat eius explicabo culpa qui vero ex laborum sit at fuga repudiandae assumenda amet nisi hic."
